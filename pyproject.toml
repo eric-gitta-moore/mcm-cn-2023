@@ -1,6 +1,6 @@
 [project]
-name = ""
-version = ""
+name = "2023mcm.cn"
+version = "0.1.0"
 description = ""
 authors = [
     {name = "JamesCurtis", email = "jamescurtis@foxmail.com"},
@@ -10,3 +10,6 @@ requires-python = ">=3.9"
 readme = "README.md"
 license = {text = "MIT"}
 
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
