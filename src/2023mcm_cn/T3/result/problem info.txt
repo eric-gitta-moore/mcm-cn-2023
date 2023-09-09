@@ -1,2 +1,2 @@
-{'name': 'soea quick start demo', 'M': 1, 'maxormins': array([1]), 'Dim': 2, 'varTypes': array([0, 0]), 'lb': array([-1, -1]), 'ub': array([1, 1]), 'borders': array([[1, 1],
+{'name': 'soea quick start demo', 'M': 1, 'maxormins': array([1]), 'Dim': 2, 'varTypes': array([0, 0]), 'lb': array([-100, -100]), 'ub': array([100, 100]), 'borders': array([[1, 1],
        [1, 1]])}
