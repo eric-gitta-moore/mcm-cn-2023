@@ -28,3 +28,35 @@ def nm2m(海里):
 
 def m2nm(m):
     return m / 1852
+
+
+def find_intersection(point1, point2, point3, point4):
+    """
+    # 示例调用
+    point1 = (1, 2)
+    point2 = (3, 2)
+    point3 = (5, 6)
+    point4 = (7, 8)
+    """
+    x1, y1 = point1
+    x2, y2 = point2
+    x3, y3 = point3
+    x4, y4 = point4
+
+    # 计算直线1的斜率
+    m1 = (y2 - y1) / (x2 - x1) if x1 != x2 else float("inf")
+
+    # 计算直线2的斜率
+    m2 = (y4 - y3) / (x4 - x3) if x3 != x4 else float("inf")
+
+    # 如果两条直线平行，则没有交点
+    if m1 == m2:
+        return None
+
+    # 计算交点的x坐标
+    x_intersect = (y3 - y1 + m1 * x1 - m2 * x3) / (m1 - m2)
+
+    # 计算交点的y坐标
+    y_intersect = m1 * (x_intersect - x1) + y1
+
+    return (x_intersect, y_intersect)
